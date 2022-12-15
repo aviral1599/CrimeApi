@@ -40,3 +40,6 @@ def home():
 @app.route('/api', methods=['GET'])
 def api_all():
     return json.dumps(data,cls=NpEncoder)
+    
+if __name__ == '__main__':
+    app.run()
